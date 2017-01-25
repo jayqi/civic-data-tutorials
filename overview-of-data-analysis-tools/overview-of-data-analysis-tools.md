@@ -14,7 +14,7 @@ Ubiquitous, graphical interface, shallow learning curve for easy tasks
 
 - **Microsoft Excel** -- not free or open source but  everywhere and is what everyone knows
 - **Google Sheets** -- not open source but free and easy to share/collaborate, if you trust Google and the cloud
-- **LibreOffice Calc** -- the most well-maintained open source office software suite
+- **[LibreOffice](https://www.libreoffice.org/) Calc** -- the most well-maintained open source office software suite
 
 ### What it's good for
 
@@ -36,6 +36,7 @@ Writing code to load and process data
 - Large datasets you don't need to look at all at once
 - Repetitive computations or transformations
 - Distribute code someone else can use to reproduce your work
+- Extensible to do more advanced stuff, e.g., build apps, interactive visualizations, machine learning
 
 ### Recommended ecosystems
 
