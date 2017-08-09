@@ -7,8 +7,10 @@ The objective is to point you in the direction of common tools and what situatio
 ## Versions
 
 There are two versions containing the same content:
-- A markdown document: overview-of-data-analysis-tools.md
-- A slide deck: overview-of-data-analysis-tools-slides.html
+- A markdown document: [overview-of-data-analysis-tools.md](https://github.com/jayqi/civic-data-tutorials/blob/master/overview-of-data-analysis-tools/overview-of-data-analysis-tools.md)
+- A slide deck: [overview-of-data-analysis-tools-slides.html](https://jayqi.github.io/civic-data-tutorials/overview-of-data-analysis-tools/overview-of-data-analysis-tools-slides.html)
+
+Internet access is needed for the slide deck to work properly, as it loads remark.js and fonts from CDN.
 
 ## Creating slides
 

@@ -124,13 +124,13 @@ A lot of common data frame and stats functionality are part of base or system pa
 
 ### Other things you'll hear about: Proprietary packages
 
-Powerful software packages with modules for common statistical techniques. Have both some graphical interface tools and programming languages.
+Powerful, paid software packages with modules for common statistical analyses. Have both some graphical interface tools and programming languages.
 
 - SAS
 - SPSS (IBM)
 - MATLAB
 
-Expensive, but often used by large companies or research institutions.
+Expensive, but often used by large companies or research institutions in many industries.
 
 ---
 
@@ -151,7 +151,7 @@ You only need "big data" (i.e., distributed computing) tools if you have so much
 
 ### Business intelligence suites
 
-Software designed for business users to quickly perform analytics and create visualizations and dashboards.
+Paid software designed for business users to quickly perform analytics and create visualizations and dashboards.
 
 - Tableau
 - Power BI (Microsoft)
@@ -279,6 +279,12 @@ Databases have a lot of benefits but come with overhead. You might want to use a
 - Need to maintain this dataset over time and integrity is important
 - Are going to be reading and writing data frequently because it's supporting an application
 
+### Data storage tips
+
+- Be organized. Once you start accumulating data, it can get bad quickly.
+- Choose a format that's easiest and most appropriate for  your application.
+- Consider if your schema will evolve, and plan ahead so that it's not painful to migrate.
+
 ---
 
 ## 4. Best practices
@@ -335,13 +341,15 @@ Package dependency management is important part. Tools:
 #### Project documentation
 
 Wikis are great for collaborative project documentation and usually have built-in revision tracking.
-- **GitHub built-in wiki** -- comes with each repo. For public, open-source projects. 
+- **GitHub built-in wiki** -- comes with each repo. For public, open-source projects.
 - **MediaWiki** -- the software that powers Wikipedia.
 - **DokuWiki** -- another popular, open-source wiki software
 
 #### Data
 
-Git is for code, not for data. Not a solved problem. Active area that people work on.
+- Git is for code, not for data.
+- Not a solved problem. Active area that people work on.
+- One recently popular tool is [Pachyderm](https://github.com/pachyderm/pachyderm)
 
 ---
 
