@@ -139,16 +139,20 @@ For most purposes, they are fairly equivalent. Python will be more comfortable t
 
 A lot of common data frame and stats functionality are part of base or system packages.
 
-- Advanced data frames: `dplyr`, `data.table`
+- Advanced data frames: `dplyr` ([cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf)), `data.table` ([cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf))
 - Reshaping: `tidyr`
-- Plotting: `ggplot2`
+- Plotting: `ggplot2` ([cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf))
 - Time series: `zoo`
-- Maps: `leaflet`
+- Maps: `leaflet` ([tutorials](https://rstudio.github.io/leaflet/))
 - Natural language processing: `tm`
 - Machine learning: `caret`
 
 #### Recommended way to get it / programming environment
 - [RStudio](https://www.rstudio.com/products/rstudio/#Desktop)
+
+#### Additional resources
+
+Many great cheat sheets from RStudio: [link](https://www.rstudio.com/resources/cheatsheets/)
 
 ---
 
@@ -193,7 +197,7 @@ Expensive, but often used by large companies or research institutions in many in
 
 #### Big data?
 
-You only need "big data" (i.e., distributed computing) tools if you have so much data that:
+You only need "big data" tools (i.e., distributed computing) if you have so much data that:
 - You can't fit it on the hard drive of one machine
 - You can't fit it in memory on one machine when doing computations
 
@@ -240,7 +244,9 @@ Many websites have REST API endpoints.
 
 Key thing to know is that they have a standardized design, and you can use a **GET HTTP request** to retrieve data from the API endpoint.
 
-Example: [`https://data.cityofchicago.org/resource/9pkb-4fbf.json?_permit_type=PERMIT - RENOVATION/ALTERATION`](https://data.cityofchicago.org/resource/9pkb-4fbf.json?_permit_type=PERMIT - RENOVATION/ALTERATION)
+Example: Chicago Building Permits
+[`https://data.cityofchicago.org/resource/9pkb-4fbf.json?_permit_type=PERMIT - RENOVATION/ALTERATION`](https://data.cityofchicago.org/resource/9pkb-4fbf.json?_permit_type=PERMIT - RENOVATION/ALTERATION)
+
 
 When to use APIs:
 - The data is frequently changing, and you want to get the most up-to-date
@@ -290,7 +296,6 @@ How to store your data so you can use it again later.
 - Flat files
 - Databases
 
-
 ---
 
 ### Flat files
@@ -328,12 +333,6 @@ Databases have a lot of benefits but come with overhead. You might want to use a
 - Require multiple people to write to it at the same time
 - Need to maintain this dataset over time and integrity is important
 - Are going to be reading and writing data frequently because it's supporting an application
-
-### Data storage tips
-
-- Be organized. Once you start accumulating data, it can get bad quickly.
-- Choose a format that's easiest and most appropriate for  your application.
-- Consider if your schema will evolve, and plan ahead so that it's not painful to migrate.
 
 ---
 
@@ -376,17 +375,16 @@ This is a critical part of **science** part of data science. Others can understa
 One reason why documentation is important.
 
 Package dependency management is important part. Tools:
-- R: packrat
-- Python: anaconda
+- R: `packrat`
+- Python: `anaconda`
 
 ---
 
 ### Version Control
 
 #### Code
-**Git** is version-control software -- the overwhelmingly most popular option. ([interactive tutorial](https://try.github.io/levels/1/challenges/1))
-
-**GitHub** is a website that hosts Git repositories. It's where people share open-source code. ([tutorial](https://guides.github.com/activities/hello-world/))
+- **Git** is version-control software -- the overwhelmingly most popular option. ([interactive tutorial](https://try.github.io/levels/1/challenges/1))
+- **GitHub** is a website that hosts Git repositories. It's where people share open-source code. ([tutorial](https://guides.github.com/activities/hello-world/))
 
 #### Project documentation
 
@@ -398,8 +396,7 @@ Wikis are great for collaborative project documentation and usually have built-i
 #### Data
 
 - Git is for code, not for data.
-- Not a solved problem. Active area that people work on.
-- One recently popular tool is [Pachyderm](https://github.com/pachyderm/pachyderm)
+- Not a solved problem. Active area of work. (Recently popular: [Pachyderm](https://github.com/pachyderm/pachyderm))
 
 ---
 
@@ -408,7 +405,7 @@ Wikis are great for collaborative project documentation and usually have built-i
 When planning a project and selecting tools, keep in mind:
 
 1. **Always try Google** -- If you need something, try googling it. Chances are that something will turn up.
-2. **Keep it simple** -- Simple systems usually work better than complicated ones
+2. **Keep it simple** -- Simple systems usually work better than complicated ones.
 3. **Minimum viable products** -- Get value sooner. Test your ideas. Fail fast, learn quickly.
 4. **Consider sustainability** -- Sustain value over time. Product needs to be easily maintainable (possibly by others). Following best practices are important for this.
 

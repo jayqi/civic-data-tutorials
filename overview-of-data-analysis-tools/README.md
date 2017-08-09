@@ -19,3 +19,8 @@ Slides are [remark](https://github.com/gnab/remark) and generated from the markd
 To generate slides from the markdown document, run in command line:
 
     markdown-to-slides overview-of-data-analysis-tools.md -o overview-of-data-analysis-tools-slides.html -s style.css
+
+Note that the default GitHub-hosted remark.js used by `markdown-to-slides` does not properly do `https` and will cause mixed content warnings in browsers. This can be fixed by replacing it with:
+```
+https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js
+```
