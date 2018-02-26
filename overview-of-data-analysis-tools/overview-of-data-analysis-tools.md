@@ -93,7 +93,7 @@ A lot of common data frame and stats functionality are part of base or system pa
 - Reshaping: `tidyr`
 - Plotting: `ggplot2` ([cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf))
 - Time series: `zoo`
-- Maps: `leaflet` ([tutorials](https://rstudio.github.io/leaflet/))
+- GIS/Maps: `leaflet` ([tutorials](https://rstudio.github.io/leaflet/)), `sp`, `sf` ([GIS in R](https://www.jessesadler.com/post/gis-with-r-intro/))
 - Natural language processing: `tm`
 - Machine learning: `caret`
 
@@ -113,7 +113,7 @@ Many great cheat sheets from RStudio: [link](https://www.rstudio.com/resources/c
 - Data frames: `pandas`
 - Math and stats: `numpy`, `scipy`
 - Plotting: `matplotlib`, `seaborn`
-- Maps: `folium`
+- GIS/Maps: `folium`, `shapely`
 - Natural language processing: `nltk`, `spaCy`
 - Machine learning: `scikit-learn`
 
@@ -147,9 +147,11 @@ Expensive, but often used by large companies or research institutions in many in
 
 #### Big data?
 
-You only need "big data" tools (i.e., distributed computing) if you have so much data that:
-- You can't fit it on the hard drive of one machine
-- You can't fit it in memory on one machine when doing computations
+You only need "big data" tools (i.e., distributed computing) if your situation involves
+- High **volume**: you can't fit it on the hard drive or in memory on one machine
+- High **velocity**: you need the results of analyses instantaneously as new data is created
+
+Most practical situations don't have those requirements and don't need "big data" tools.
 
 ---
 
@@ -190,7 +192,7 @@ These websites often have online viewers, easy download buttons, APIs, and speci
 
 Many websites have REST API endpoints.
 - API: application programming interface -- entry point for interacting with the website with programming.
-- REST: representational state transfer -- a particular design pattern that has become standard. It means you can expect the API to be structured a certain way.
+- REST: representational state transfer -- a particular design pattern that has become standard. It means you can expect the API to be structured and behave in a certain way.
 
 Key thing to know is that they have a standardized design, and you can use a **GET HTTP request** to retrieve data from the API endpoint.
 
@@ -264,22 +266,23 @@ Generally will need to be read into memory entirely to access.
 
 #### Others
 - **Excel files (.xls / .xlsx)** -- if formatting is important to save, but otherwise avoid it because it can be harder to load
-- **binary formats** -- preserves datatypes, faster read/write than .csv. Includes: `.rds` in R, `pickle` in Python, `feather`
+- **binary formats** -- preserves datatypes, faster read/write than .csv, but larger file size. Includes: `.rds` in R, `pickle` in Python, `feather`
 
 ---
 
 ### Databases
 
-A **database management systems** (a.k.a. database software) stores your data and lets users interact with it to query or update.
+A **database management systems** (a.k.a. database software) stores your data and lets users interact with it to query or update. Broad categories:
+- **Relational** (**SQL**) -- row-oriented tabular data.
+  - Examples: PostgreSQL, SQLite ([which to use](https://www.sqlite.org/whentouse.html))
+- **NoSQL** -- high-volume data, high-velocity data, and/or flexible data structure (unstructured or non-tabular structure).
+  - Types and examples: Document (MongoDB, Elasticsearch), Key-value (Redis), Column-oriented (Cassandra), Graph (Neo4j)
 
-Different types for differently structured data:
-- **Relational** -- tabular data. Examples: PostgreSQL, SQLite
-- **NoSQL** -- unstructured data. Examples: MongoDB, Elasticsearch
-- **Graph** -- graph structure (nodes and edges). Examples: Neo4j
+**Use SQL if you can. Most data will work with SQL.** Easy-to-use, easy to find expertise, data consistency guarantees.
 
 #### Do I need a database?
 
-Databases have a lot of benefits but come with overhead. You might want to use a database if you:
+Databases have benefits but come with overhead. You might want to use one if you:
 - Require multiple people to write to it at the same time
 - Need to maintain this dataset over time and integrity is important
 - Are going to be reading and writing data frequently because it's supporting an application
@@ -334,7 +337,7 @@ Package dependency management is important part. Tools:
 
 #### Code
 - **Git** is version-control software -- the overwhelmingly most popular option. ([interactive tutorial](https://try.github.io/levels/1/challenges/1))
-- **GitHub** is a website that hosts Git repositories. It's where people share open-source code. ([tutorial](https://guides.github.com/activities/hello-world/))
+- **GitHub** is a website that hosts (generally public) Git repositories. It's where people share open-source code. ([tutorial](https://guides.github.com/activities/hello-world/))
 
 #### Project documentation
 
@@ -356,5 +359,5 @@ When planning a project and selecting tools, keep in mind:
 
 1. **Always try Google** -- If you need something, try googling it. Chances are that something will turn up.
 2. **Keep it simple** -- Simple systems usually work better than complicated ones.
-3. **Minimum viable products** -- Get value sooner. Test your ideas. Fail fast, learn quickly.
+3. **Minimum viable products** -- Learn quickly. Test your ideas. Fail fast.
 4. **Consider sustainability** -- Sustain value over time. Product needs to be easily maintainable (possibly by others). Following best practices are important for this.
