@@ -94,7 +94,7 @@ A lot of common data frame and stats functionality are part of base or system pa
 - Plotting: `ggplot2` ([cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf))
 - Time series: `zoo`
 - GIS/Maps: `leaflet` ([tutorials](https://rstudio.github.io/leaflet/)), `sp`, `sf` ([GIS in R](https://www.jessesadler.com/post/gis-with-r-intro/))
-- Natural language processing: `tm`
+- Natural language processing: `tm`, `quanteda`, `tidytext` ([book](https://www.tidytextmining.com/))
 - Machine learning: `caret`
 
 #### Recommended way to get it / programming environment
