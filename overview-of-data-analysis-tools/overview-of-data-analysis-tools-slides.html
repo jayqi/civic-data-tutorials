@@ -95,7 +95,7 @@ Ubiquitous; graphical interface; shallow learning curve for easy tasks
 - Manual data entry
 
 #### Beware
-- **Autoformatting**: this can change values in your data, especially with date and times. Tips for avoiding:
+- **Autoformatting**: this can change values in your data, especially with timestamps. Tips for avoiding:
     - When opening files, use `Import > Import as a Text File`
     - Formatting cells as `Text`. Must be done _before_ you enter or paste data.
 
@@ -141,7 +141,7 @@ A lot of common data frame and stats functionality are part of base or system pa
 
 - Advanced data frames: `dplyr` ([cheat sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf)), `data.table` ([cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf))
 - Reshaping: `tidyr`
-- Plotting: `ggplot2` ([cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf))
+- Plotting: `ggplot2` ([cheat sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)), `plotly`
 - Time series: `zoo`
 - GIS/Maps: `leaflet` ([tutorials](https://rstudio.github.io/leaflet/)), `sp`, `sf` ([GIS in R](https://www.jessesadler.com/post/gis-with-r-intro/))
 - Natural language processing: `tm`, `quanteda`, `tidytext` ([book](https://www.tidytextmining.com/))
@@ -160,9 +160,9 @@ Many great cheat sheets from RStudio: [link](https://www.rstudio.com/resources/c
 
 #### Common libraries
 
-- Data frames: `pandas`
+- Data frames: `pandas` ([cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf))
 - Math and stats: `numpy`, `scipy`
-- Plotting: `matplotlib`, `seaborn`
+- Plotting: `matplotlib`, `seaborn`, `plotly`
 - GIS/Maps: `folium`, `shapely`
 - Natural language processing: `nltk`, `spaCy`
 - Machine learning: `scikit-learn`
@@ -172,7 +172,8 @@ Many great cheat sheets from RStudio: [link](https://www.rstudio.com/resources/c
 
 #### Recommended programming environment
 - [Jupyter Notebook](http://jupyter.org/) -- can render natively on GitHub
-- [Spyder](https://pythonhosted.org/spyder/) -- IDE in style of RStudio and MATLAB
+- [Spyder](https://pythonhosted.org/spyder/) -- open source IDE, like MATLAB and RStudio
+- [PyCharm](https://www.jetbrains.com/pycharm/) -- commercial IDE, free version available
 
 ---
 
@@ -190,7 +191,7 @@ Expensive, but often used by large companies or research institutions in many in
 
 ### Other things you'll hear about: Advanced tools
 
-- **Julia** -- open source language; can do computations very quickly, but more for power users that care about speed.
+- **Julia** -- open source language; fast computations, but more for power users that care about high performance.
 - **Scala** -- runs on Java virtual machine; fast, strongly typed; good if you're deploying at scale
 - **Hadoop** -- distributed file system for "big data"
 - **Spark** -- distributed computing framework for "big data"
@@ -214,7 +215,7 @@ Paid software designed for business users to quickly perform analytics and creat
 
 Costs money to get subscriptions or licenses. Often has free, restricted versions. Some have license donation programs for nonprofits, e.g. [Tableau](https://www.tableau.com/foundation/license-donations).
 
-Potential option if you need straightforward, professional-looking visualizations, but you don't have time to build up expertise in programming options.
+Potential option if you need straightforward, professional-looking visualizations, but you don't have time to build up expertise or deal with customization for programming options.
 
 ---
 
@@ -268,6 +269,7 @@ Examples:
 - [`RSocrata`](https://github.com/Chicago/RSocrata) (R), [`sodapy`](https://pypi.python.org/pypi/sodapy) (Python) -- clients for Socrata platform used by many government data portals
 - `Quandl` ([R](https://www.quandl.com/tools/r))  ([Python](https://www.quandl.com/tools/python)) -- clients for Quandl API
 - [`twitteR`](https://www.rdocumentation.org/packages/twitteR/versions/1.1.9) (R), [`python-twitter`](https://github.com/bear/python-twitter) (Python) -- clients for Twitter API
+- [`acs`](https://cran.r-project.org/package=acs) (R), [`census`](https://github.com/datamade/census) (Python) -- client for U.S. Census data
 
 #### In general:
 
@@ -335,7 +337,8 @@ A **database management systems** (a.k.a. database software) stores your data an
 Databases have benefits but come with overhead. You might want to use one if you:
 - Require multiple people to write to it at the same time
 - Need to maintain this dataset over time and integrity is important
-- Are going to be reading and writing data frequently because it's supporting an application
+- Are reading and writing data frequently because it's supporting an application
+- Have a large dataset and typically only typically look at a subset
 
 ---
 
