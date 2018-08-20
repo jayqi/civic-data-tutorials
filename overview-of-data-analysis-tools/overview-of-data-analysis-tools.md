@@ -16,6 +16,10 @@ The four major topics are:
 3. Storing data
 4. Best practices
 
+### This content is open source!
+
+Check out the source code on [GitHub](https://github.com/jayqi/civic-data-tutorials/tree/master/overview-of-data-analysis-tools). Both markdown document and slide deck versions are there. 
+
 ---
 
 ## 1. Analyzing data
